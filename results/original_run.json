@@ -1,0 +1,10 @@
+{
+  "source": "Saved outputs of DATAX504 Assignment 5, time-series track",
+  "model_test_mae_celsius": 0.452,
+  "persistence_test_mae_celsius": 0.506,
+  "lookback_observations": 144,
+  "horizon_observations": 7,
+  "epochs_completed": 7,
+  "fresh_training_run": false,
+  "note": "Rounded historical metrics; no trained weights included."
+}

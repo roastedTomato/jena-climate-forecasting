@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.env
+.env.*
+*.key
+*.pem
+data/
+*.csv
+*.zip
+*.keras
+*.h5
