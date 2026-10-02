@@ -13,3 +13,4 @@ data/
 *.zip
 *.keras
 *.h5
+runs/

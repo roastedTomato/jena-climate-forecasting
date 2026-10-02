@@ -50,9 +50,24 @@ jupyter lab jena_climate_forecasting.ipynb
 
 On Windows, use `.venv\Scripts\activate` to activate the environment. Run the notebook in order. The first run requires internet access to download the dataset. Full training takes time and memory; the dataset itself is not committed.
 
+## Command-line training
+
+The notebook and command-line runner use the same Python modules.
+
+```sh
+python train.py
+# Or use an existing CSV:
+python train.py --csv /path/to/jena_climate.csv --epochs 20
+```
+
+New run metrics and learning history are written to `runs/metrics.json`; historical results remain separate.
+
 ## Files
 
-- `jena_climate_forecasting.ipynb`: data preparation, baseline, model, evaluation and plots.
+- `data.py`: downloading, chronological splits, training-only normalisation and window datasets.
+- `model.py`: Conv1D + LSTM architecture.
+- `train.py`: shared baseline, training and evaluation functions plus command-line runner.
+- `jena_climate_forecasting.ipynb`: calls the Python modules and presents plots and analysis.
 - `requirements.txt`: inspected environment versions.
 - `results/original_run.json`: historical result provenance.
 
